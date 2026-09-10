@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Entry</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="index.html" class="brand">Reflect.</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="vault.html">Vault</a>
+        <a href="new-entry.html" class="nav-button">New Entry</a>
+        <a href="index.html" class="profile-button" aria-label="Profile">👤</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <div class="page-header">
+        <h1 class="page-title">Write a new reflection</h1>
+        <p class="page-subtitle">
+          Capture the ideas, lessons, and breakthroughs that are worth revisiting later.
+        </p>
+      </div>
+
+      <section class="form-card">
+        <form id="entry-form" class="entry-form">
+          <div>
+            <label for="entry-title">Entry title</label>
+            <input id="entry-title" name="title" type="text" placeholder="Project milestone" />
+          </div>
+
+          <div>
+            <label for="entry-body">Reflection</label>
+            <textarea id="entry-body" name="body" placeholder="Write your reflection here..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button id="save-entry" type="submit" class="primary-button">Save Entry</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

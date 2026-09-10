@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vault</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="index.html" class="brand">Reflect.</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="vault.html">Vault</a>
+        <a href="new-entry.html" class="nav-button">New Entry</a>
+        <a href="index.html" class="profile-button" aria-label="Profile">👤</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <div class="page-header">
+        <h1 class="page-title">All entries</h1>
+        <p class="page-subtitle">
+          Every reflection saved to the archive, arranged in one long timeline.
+        </p>
+      </div>
+
+      <section id="vault-list" class="vault-list" aria-live="polite"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

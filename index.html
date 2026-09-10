@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflect Journal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="index.html" class="brand">Reflect.</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="vault.html">Vault</a>
+        <a href="new-entry.html" class="nav-button">New Entry</a>
+        <a href="index.html" class="profile-button" aria-label="Profile">👤</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio Notes</p>
+          <h1>Thoughtful work, captured in moments.</h1>
+          <p>
+            A simple reflection space for studies, milestones, and the ideas that shape
+            a creative practice.
+          </p>
+        </div>
+
+        <aside class="hero-panel" aria-label="Saved entry summary">
+          <span>Recent entries</span>
+          <strong id="entry-count">0 entries</strong>
+        </aside>
+      </section>
+
+      <section aria-labelledby="latest-heading">
+        <div class="section-head">
+          <h2 id="latest-heading">Latest entries</h2>
+          <a href="vault.html" class="text-link">View all</a>
+        </div>
+
+        <div id="entry-grid" class="card-grid" aria-live="polite">
+          <article class="entry-card">
+            <p class="date">Aug 10</p>
+            <h3>First Studio Review</h3>
+            <p>Feedback helped clarify the process and sharpen the narrative behind the work.</p>
+          </article>
+          <article class="entry-card">
+            <p class="date">Aug 16</p>
+            <h3>Designing for Clarity</h3>
+            <p>Spacing and hierarchy made the layout feel more intentional and easier to use.</p>
+          </article>
+          <article class="entry-card">
+            <p class="date">Aug 22</p>
+            <h3>Material Storytelling</h3>
+            <p>The material palette shaped the experience even before the final screens were refined.</p>
+          </article>
+          <article class="entry-card">
+            <p class="date">Aug 26</p>
+            <h3>The Power of Constraints</h3>
+            <p>Constraints pushed the concept toward focus and created more meaningful decisions.</p>
+          </article>
+          <article class="entry-card">
+            <p class="date">Sep 01</p>
+            <h3>Small Iterations</h3>
+            <p>Progress came from a sequence of thoughtful refinements rather than one dramatic leap.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
